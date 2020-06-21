@@ -1,0 +1,35 @@
+
+
+#oke-jo{
+   float: right;
+}
+
+#log-in{
+   width: 100%;
+   pad: 5px;
+}
+
+.java{
+   background: url('../../asset/images/bg-login.jpg');
+   width: 100%;
+   background-size: cover;
+}
+
+.java-tree{
+   display: inline-block;
+   width: 100%;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-size: 20pt;
+   text-align: center;
+}
+
+.java-tree a {
+   color: blanchedalmond;
+   text-align: center;
+   width: 100%;
+   margin-bottom: 7px;
+}
+
+.java-tree a:hover{
+   color: rgb(0, 64, 68);
+}
