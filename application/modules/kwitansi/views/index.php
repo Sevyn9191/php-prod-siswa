@@ -6,11 +6,11 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <!-- <a href="<?php echo base_url();?>biaya/tambah" class="btn btn-primary">Kwitansi</a> -->
+            <a href="<?php echo base_url();?>kwitansi/export_xls" class="btn btn-danger">DOWNLOAD LAPORAN</a>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="<?php echo base_url();?>biaya">Home</a></li>
+              <li class="breadcrumb-item"><a href="<?php echo base_url(); ?>dashboard">Home</a></li>
               <li class="breadcrumb-item active">Kwitansi</li>
             </ol>
           </div>
@@ -31,12 +31,16 @@
             </div>
             <!-- /.card-header -->
             <div class="card-body">
-              <table id="example1" class="table table-bordered table-striped">
-                <thead>
+            <table id="example" class="table table-bordered table-striped display nowrap" style="width:100%">
+                <thead class="thtable">
                 <tr>
                     <th>No Kwitansi</th>
                     <th>Tgl Kwitansi</th>
                     <th>Nis</th>
+                    <th>NO Daftar</th>
+                    <th>Nama Calon/Siswa</th>
+                    <th>Keterangan</th>
+                    <th>Jumlah</th>
                     <th>Create By</th>
                     <!-- <th>Opsi</th> -->
                 </tr>
@@ -48,6 +52,10 @@
                         <td><?= $row['No_Kwitansi']; ?></td>    
                         <td><?= $row['Tgl_Kwitansi']; ?></td>    
                         <td><?= $row['Nis']; ?></td>    
+                        <td><?= $row['No_Daftar']; ?></td>    
+                        <td><?= $row['Nm_CaSis']; ?></td>    
+                        <td><?= $row['Nm_Biaya']; ?></td>    
+                        <td><?= $row['Jumlah']; ?></td>    
                         <td><?= $row['Nama']; ?></td>    
                         <!-- <td><a href="<?= base_url();?>biaya/edit?id=<?php echo $row['Kd_Biaya']; ?>" class="btn btn-warning">Edit</a> | <a href="<?php echo base_url();?>biaya/delete?id=<?php echo $row['Kd_Biaya']; ?>" class="btn btn-danger">Delete</a></td>     -->
                     </tr>
@@ -55,9 +63,13 @@
                 </tbody>
                 <tfoot>
                 <tr>
-                    <th>No Kwitansi</th>
+                <th>No Kwitansi</th>
                     <th>Tgl Kwitansi</th>
                     <th>Nis</th>
+                    <th>NO Daftar</th>
+                    <th>Nama Calon/Siswa</th>
+                    <th>Keterangan</th>
+                    <th>Jumlah</th>
                     <th>Create By</th>
                 </tr>
                 </tfoot>

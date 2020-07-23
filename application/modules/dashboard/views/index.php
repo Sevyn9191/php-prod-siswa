@@ -25,24 +25,28 @@
         <div class="row">
           <div class="col-lg-3 col-6">
             <!-- small box -->
+            <a href="<?php echo base_url(); ?>pendaftaran">
             <div class="small-box bg-info">
-              <div class="inner">
+              <div class="inner jox">
                 <h3><?php echo $count; ?></h3>
 
                 <p>Pendaftaran</p>
               </div>
+              
               <div class="icon">
               <i class="ion ion-person-add"></i>
                 
               </div>
-              <a href="<?php echo base_url(); ?>daftar" class="small-box-footer">Info Lebih Lanjut <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="<?php echo base_url(); ?>pendaftaran" class="small-box-footer">Info Lebih Lanjut <i class="fas fa-arrow-circle-right"></i></a>
             </div>
+            </a>
           </div>
           <!-- ./col -->
           <div class="col-lg-3 col-6">
             <!-- small box -->
+            <a href="<?php echo base_url(); ?>siswa">
             <div class="small-box bg-success">
-              <div class="inner">
+              <div class="inner jox">
                 <h3><?php echo $count2; ?></h3>
 
                 <p>Siswa</p>
@@ -52,12 +56,14 @@
               </div>
               <a href="<?php echo base_url(); ?>siswa" class="small-box-footer">Info Lebih Lanjut <i class="fas fa-arrow-circle-right"></i></a>
             </div>
+            </a>
           </div>
           <!-- ./col -->
           <div class="col-lg-3 col-6">
             <!-- small box -->
+            <a href="<?php echo base_url(); ?>biaya">
             <div class="small-box bg-warning">
-              <div class="inner">
+              <div class="inner jox">
                 <h3><?php echo $count3; ?></h3>
 
                 <p>Biaya</p>
@@ -67,21 +73,24 @@
               </div>
               <a href="<?php echo base_url(); ?>biaya" class="small-box-footer">Info Lebih Lanjut<i class="fas fa-arrow-circle-right"></i></a>
             </div>
+            </a>
           </div>
           <!-- ./col -->
           <div class="col-lg-3 col-6">
             <!-- small box -->
+            <a href="<?php echo base_url(); ?>pembayaran">
             <div class="small-box bg-danger">
-              <div class="inner">
-                <h3><?php echo $count4; ?></h3>
+              <div class="inner jox">
+                <h3>%</h3>
 
-                <p>Kwitansi Data</p>
+                <p>Pembayaran</p>
               </div>
               <div class="icon">
                 <i class="ion ion-pie-graph"></i>
               </div>
-              <a href="<?php echo base_url(); ?>kwitansi" class="small-box-footer">Info Lebih Lanjut<i class="fas fa-arrow-circle-right"></i></a>
+              <a href="<?php echo base_url(); ?>pembayaran" class="small-box-footer">Info Lebih Lanjut<i class="fas fa-arrow-circle-right"></i></a>
             </div>
+            </a>
           </div>
           <!-- ./col -->
         </div>

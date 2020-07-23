@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="icon" type="images/jpg" href="<?php echo base_url(); ?>asset/images/icon.png">
+  <link rel="icon" type="images/jpg" href="<?php echo base_url(); ?>asset/images/logo-ok.jpg">
   <title>SMK SUMPAH PEMUDA</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,13 +28,13 @@
   <!-- /.login-logo -->
   <div class="card">
     <div class="card-body login-card-body">
-      <p class="login-box-msg">Login</p>
+      <p class="login-box-msg">LOGIN</p>
       <?php echo $this->session->flashdata('message'); ?>
 
       <form action="" method="post">
       <?php form_open('login');?>
         <div class="input-group mb-3">
-          <input type="text" name="username" class="form-control" placeholder="User Id">
+          <input type="text" name="username" class="form-control" placeholder="User Id" autocomplete="off">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -43,7 +43,7 @@
         </div>
         <?= form_error('username','<small class="text-danger pl-3">','</small>'); ?>
         <div class="input-group mb-3">
-          <input type="password" name="password" class="form-control" placeholder="Password">
+          <input type="password" name="password" class="form-control" placeholder="Password" autocomplete="off">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>

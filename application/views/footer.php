@@ -76,31 +76,5 @@ $(document).ready(function() {
     } );
 } );
 </script>
-<script>
-  $('#jimmy').change(function()
-  {
-    var nama =  $('#jimmy').val();
-
-    $.ajax({
-      url :'<?php echo base_url(); ?>kwitansi/get',
-      method : 'post',
-      data : {nama:nama},
-      dataType:'json',
-      success:function(data)
-      {
-          var html ='';
-          var i;
-
-          for(i=0;i<data.length;i++)
-          {
-            html += data[i].Nm_Sis;
-          }
-
-          $('#asal_sekolah').html(html);
-          // console.log(html);
-      }
-    });
-  });
-</script>
 </body>
 </html>

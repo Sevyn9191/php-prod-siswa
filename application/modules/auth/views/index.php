@@ -18,10 +18,10 @@
             <?php echo $this->session->flashdata('regis_suc'); ?>
 
             <!--  -->
-            <input type="text" name="username" id="username" placeholder="Your Name">
+            <input type="text" name="username" id="username" placeholder="Your Name" autocomplete="off">
             <?= form_error('username','<small class="text-danger pl-3">','</small>'); ?>
             <br>
-            <input type="password" name="password" id="password" placeholder="password">
+            <input type="password" name="password" id="password" placeholder="password" autocomplete="off">
             <?= form_error('password','<small class="text-danger pl-3">','</small>'); ?>
             <br>
             <button type="submit">Login</button>

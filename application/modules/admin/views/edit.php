@@ -44,7 +44,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa-square"></i></span>
                                 </div>
-                                <input type="text" class="form-control" name="nama" id="nama" value="<?php echo $row['Nama']; ?>">
+                                <input type="text" class="form-control" name="nama" id="nama" value="<?php echo $row['Nama']; ?>" autocomplete="off">
                             </div>
                             <!-- /.input group -->
                             <?= form_error('nama','<small class="text-danger pl-3">','</small>'); ?>
@@ -59,7 +59,7 @@
                             <div class="input-group-prepend">
                               <span class="input-group-text"><i class="fas fa-map-marker-alt mr-1"></i></span>
                             </div>
-                            <input type="text" class="form-control" name="alamat" value="<?php echo $row['Alamat']; ?>">
+                            <input type="text" class="form-control" name="alamat" value="<?php echo $row['Alamat']; ?>" autocomplete="off">
                           </div>
                       <!-- /.input group -->
                       <?= form_error('alamat','<small class="text-danger pl-3">','</small>'); ?>
@@ -75,7 +75,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa fa-phone"></i></span>
                                 </div>
-                                <input type="number" class="form-control" name="no_hp" id="no_hp" value="<?php echo $row['No_HP']; ?>">
+                                <input type="number" class="form-control" name="no_hp" id="no_hp" value="<?php echo $row['No_HP']; ?>" autocomplete="off">
                             </div>
                             <!-- /.input group -->
                             <?= form_error('no_hp','<small class="text-danger pl-3">','</small>'); ?>
@@ -83,16 +83,16 @@
                     </div>
                     <div class="col-md-12">
                         <div class="form-group">
-                            <label>Status</label>
+                            <label>Jabatan</label>
 
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa-envelope"></i></span>
                                 </div>
-                                <input type="text" class="form-control" name="status" id="status" value="<?php echo $row['Status']; ?>">
+                                <input type="text" class="form-control" name="jabatan" id="jabatan" value="<?php echo $row['Jabatan']; ?>" autocomplete="off">
                             </div>
                             <!-- /.input group -->
-                            <?= form_error('status','<small class="text-danger pl-3">','</small>'); ?>
+                            <?= form_error('jabatan','<small class="text-danger pl-3">','</small>'); ?>
                         </div>
                     </div>
                     

@@ -70,10 +70,9 @@ class Admin_model extends CI_Model
       $this->db->update($table,$data);
    }
 
-   function delete_admin($where,$table)
+   function delete_admin($where)
    {
-       $this->db->where($where);
-       $this->db->delete($table);
+        return $this->db->query("DELETE FROM user WHERE NIK = '$where' ");
    }
 
 }

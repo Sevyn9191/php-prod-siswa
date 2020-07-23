@@ -12,7 +12,7 @@
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="<?php echo base_url(); ?>dashboard">Home</a></li>
               <li class="breadcrumb-item active">Biaya</li>
             </ol>
           </div>
@@ -38,7 +38,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <input type="hidden" name="id" id="" value="<?php echo $row['Kd_Biaya']; ?>">
+                            <input type="hidden" name="id" id="" value="<?php echo $row['Kd_Biaya']; ?>" autocomplete="off">
                             <label>Keterangan Biaya</label>
                             <div class="input-group">
                                 <div class="input-group-prepend">
@@ -58,7 +58,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">Rp.</span>
                                 </div>
-                                <input type="text" class="form-control" type="number" name="harga" id="harga" value="<?php echo $row['Besar_Biaya']; ?>">
+                                <input type="text" class="form-control" type="number" name="harga" id="harga" value="<?php echo $row['Besar_Biaya']; ?>" autocomplete="off">
                             </div>
                             <!-- /.input group -->
                             <?= form_error('harga','<small class="text-danger pl-3">','</small>'); ?>

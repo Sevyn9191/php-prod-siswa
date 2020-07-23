@@ -31,7 +31,7 @@ class Admin extends MX_Controller
         $this->form_validation->set_rules('no_hp', 'Your Number Phone','required');
         $this->form_validation->set_rules('username', 'Username Value','required');
         $this->form_validation->set_rules('password', 'Your password value','required');
-        $this->form_validation->set_rules('status', 'Your status value','required');
+        $this->form_validation->set_rules('jabatan', 'Your status value','required');
     
             if ($this->form_validation->run()==false) {
                 $data = array(
@@ -59,7 +59,7 @@ class Admin extends MX_Controller
         $hp = $this->input->post('no_hp');
         $alamat = $this->input->post('alamat');
         $password = $this->input->post('password');
-        $status = $this->input->post('status');
+        $jabatan = $this->input->post('jabatan');
 
         $karyawan_data = array(
             'Kd_Karyawan' => $kd_k,
@@ -67,7 +67,7 @@ class Admin extends MX_Controller
             'Nama'=>$nama,
             'Alamat'=>$alamat,
             'No_HP'=>$hp,
-            'Status'=>$status
+            'Jabatan'=>$jabatan
         );
 
         $user_data = array(
@@ -113,7 +113,7 @@ class Admin extends MX_Controller
         $this->form_validation->set_rules('nama', 'Your Information','required');
         $this->form_validation->set_rules('alamat', 'Your Address Value','required');
         $this->form_validation->set_rules('no_hp', 'Your Number Phone','required');
-        $this->form_validation->set_rules('status', 'Your Status Phone','required');
+        $this->form_validation->set_rules('jabatan', 'Your Status Phone','required');
     
             if ($this->form_validation->run()==false) {
                 $data = array(
@@ -135,7 +135,7 @@ class Admin extends MX_Controller
         $nama = $this->input->post('nama');
         $hp = $this->input->post('no_hp');
         $alamat = $this->input->post('alamat');
-        $status = $this->input->post('status');
+        $jabatan = $this->input->post('jabatan');
    
         // print_r($id);
         $karyawan_data = array(
@@ -143,7 +143,7 @@ class Admin extends MX_Controller
             'Nama'=>$nama,
             'Alamat'=>$alamat,
             'No_HP'=>$hp,
-            'Status'=>$status
+            'Jabatan'=>$jabatan
         );
  
          $where = array(
@@ -159,11 +159,9 @@ class Admin extends MX_Controller
     {
         $id = htmlspecialchars($this->input->get('id'));
 
-        $where = array(
-            'Kd_Karyawan' => $id
-        );
+      
 
-        $data = $this->Admin_model->delete_admin($where,'admin');
+        $data = $this->Admin_model->delete_admin($id);
         $this->session->set_flashdata('success','<div class="alert alert-success" role="alert">Successfully Delete Data</div>');
         redirect('admin');
     }

@@ -5,7 +5,8 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <a href="<?php echo base_url();?>daftar" class="btn btn-primary">TAMBAH DATA</a>
+            <!-- <a href="<?php echo base_url();?>siswa/add" class="btn btn-primary">TAMBAH DATA</a> -->
+            <a href="<?php echo base_url();?>siswa/export_xls" class="btn btn-danger">DOWNLOAD LAPORAN</a>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -35,19 +36,8 @@
                 <tr>
                     <th>Nis</th>
                     <th>Nama Siswa</th>
-                    <th>Asal Sekolah</th>
-                    <th>Tempat Lahir</th>
-                    <th>Tanggal Lahir</th>
-                    <th>Jenis Kelamin</th>
-                    <th>Agama</th>
-                    <th>Alamat</th>
-                    <th>Nama Ayah</th>
-                    <th>Nama Ibu</th>
-                    <th>Alamat Ortu</th>
-                    <th>No Handphone Siswa</th>
-                    <th>Nama Wali</th>
-                    <th>Alamat Wali</th>
                     <th>No Daftar</th>
+                    <th>Jurusan</th>
                     <th>Kd Karyawan</th>
                     <th>Opsi</th>
                 </tr>
@@ -57,43 +47,21 @@
                     foreach ($cups as $row) { ?>
                     <tr>
                         <td><?= $row['Nis']; ?></td>    
-                        <td><?= $row['Nm_Sis']; ?></td>    
-                        <td><?= $row['As_Sek']; ?></td>    
-                        <td><?= $row['Tmpt_Lahir']; ?></td>    
-                        <td><?= $row['Tgl_Lhr_Sis']; ?></td>    
-                        <td><?= $row['Jen_Kel']; ?></td>    
-                        <td><?= $row['Agama_Sis']; ?></td>    
-                        <td><?= $row['Almt_Sis']; ?></td>    
-                        <td><?= $row['Nm_Ayah_Sis']; ?></td>    
-                        <td><?= $row['Nm_Ibu_Sis']; ?></td>    
-                        <td><?= $row['Al_Ortu_Sis']; ?></td>    
-                        <td><?= $row['No_HP_Sis']; ?></td>    
-                        <td><?= $row['Nm_Wali']; ?></td>    
-                        <td><?= $row['Al_Wali']; ?></td>    
+                        <td><?= $row['Nm_CaSis']; ?></td>    
                         <td><?= $row['No_Daftar']; ?></td>    
-                        <td><?= $row['Kd_Karyawan']; ?></td>    
-                        <td><a href="<?= base_url();?>siswa/edit?id=<?php echo $row['Nis']; ?>" class="btn btn-warning">Edit</a> | <a href="<?php echo base_url();?>siswa/delete?id=<?php echo $row['Nis']; ?>" class="btn btn-danger">Delete</a> | <a href="<?php echo base_url();?>kwitansi/print?id=<?php echo $row['Nis']; ?>" class="btn btn-primary">Proses</a></td>    
+                        <td><?= $row['Jurusan']; ?></td>    
+                        <td><?= $row['Kd_Karyawan']; ?></td>     
+                        <td><a href="<?= base_url();?>siswa/edit?id=<?php echo $row['Nis']; ?>" class="btn btn-warning">Edit</a> | <a href="<?php echo base_url();?>siswa/delete?id=<?php echo $row['Nis']; ?>" class="btn btn-danger">Delete</a> | <a href="<?php echo base_url();?>siswa/print_siswa?id=<?php echo $row['Nis']; ?>" class="btn btn-success">Print</a></td>    
                     </tr>
                     <?php } ?>
                 </tbody>
                 <tfoot>
                 <tr>
-                    <th>Nis</th>
-                    <th>No Daftar</th>
+                <th>Nis</th>
                     <th>Nama Siswa</th>
-                    <th>Tanggal Daftar</th>
-                    <th>Asal Sekolah</th>
-                    <th>Tempat Lahir</th>
-                    <th>Tanggal Lahir</th>
-                    <th>Jenis Kelamin</th>
-                    <th>Agama</th>
-                    <th>Alamat</th>
-                    <th>Nama Ayah</th>
-                    <th>Nama Ibu</th>
-                    <th>Alamat Ortu</th>
-                    <th>No Handphone Siswa</th>
-                    <th>Nama Wali</th>
-                    <th>Alamat Wali</th>
+                    <th>No Daftar</th>
+                    <th>Jurusan</th>
+                    <th>Kd Karyawan</th>
                     <th>Opsi</th>
                 </tr>
                 </tfoot>

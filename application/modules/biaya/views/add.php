@@ -12,7 +12,7 @@
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="<?php echo base_url(); ?>dashboard">Home</a></li>
               <li class="breadcrumb-item active">Biaya</li>
             </ol>
           </div>
@@ -43,7 +43,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa-square"></i></span>
                                 </div>
-                                <input type="text" class="form-control" name="nama" id="nama">
+                                <input type="text" class="form-control" name="nama" id="nama" autocomplete="off">
                             </div>
                             <!-- /.input group -->
                             <?= form_error('nama','<small class="text-danger pl-3">','</small>'); ?>
@@ -57,7 +57,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">Rp.</span>
                                 </div>
-                                <input type="text" class="form-control" type="number" name="harga" id="harga">
+                                <input type="text" class="form-control" type="number" name="harga" id="harga" autocomplete="off">
                             </div>
                             <!-- /.input group -->
                             <?= form_error('harga','<small class="text-danger pl-3">','</small>'); ?>

@@ -161,4 +161,5 @@ class Daftar extends MX_Controller
         redirect('daftar');
     }
 
+
 }

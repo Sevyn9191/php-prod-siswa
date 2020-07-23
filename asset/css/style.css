@@ -10,7 +10,7 @@
 }
 
 .java{
-   background: url('../../asset/images/bg-login.jpg');
+   background: url('../../asset/images/lg4.jpg');
    width: 100%;
    background-size: cover;
 }
@@ -32,4 +32,9 @@
 
 .java-tree a:hover{
    color: rgb(0, 64, 68);
+}
+
+.jox{
+   /* margin-left: 10px; */
+   padding: 7px;
 }

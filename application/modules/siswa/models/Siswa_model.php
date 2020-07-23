@@ -4,7 +4,7 @@ class Siswa_model extends CI_Model
 {
     function getData()
     {
-        return $this->db->get('siswa');
+        return $this->db->query('SELECT * FROM siswa JOIN pendaftaran ON siswa.No_Daftar = pendaftaran.No_Daftar');
     }
 
     public function autoId()
@@ -24,6 +24,10 @@ class Siswa_model extends CI_Model
       return $yo;
    }
 
+   function print_lap($nis)
+   {
+       return $this->db->query("SELECT * FROM siswa JOIN pendaftaran ON siswa.No_Daftar = pendaftaran.No_Daftar WHERE Siswa.Nis = '$nis' ")->result_array();
+   }
    function insert_sis($table,$data)
    {
        return $this->db->insert($table,$data);
@@ -33,9 +37,9 @@ class Siswa_model extends CI_Model
    {
        return $this->db->get_where($table,$data)->result_array();
    }
-   function getSiswa($table,$data)
+   function getSiswa($id)
    {
-       return $this->db->get_where($table,$data)->result_array();
+       return $this->db->query("SELECT * FROM siswa JOIN pendaftaran ON siswa.No_Daftar=pendaftaran.No_Daftar WHERE siswa.Nis = '$id' ")->result_array();
    }
    function getIdK($table,$data)
    {
@@ -62,6 +66,11 @@ class Siswa_model extends CI_Model
    function getOk($table,$id)
    {
        return $this->db->get_where($table,$id)->result_array();
+   }
+
+   function update_pen($id)
+   {
+       return $this->db->query('UPDATE pendaftaran SET status =1 WHERE No_Daftar = "'.$id.'" ');
    }
 
 }

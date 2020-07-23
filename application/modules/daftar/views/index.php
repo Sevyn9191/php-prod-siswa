@@ -31,7 +31,7 @@
             </div>
             <!-- /.card-header -->
             <div class="card-body">
-              <table id="example" class="table table-bordered table-striped display nowrap" style="width:100%">
+            <table id="example" class="table table-bordered table-striped display nowrap" style="width:100%">
                 <thead class="thtable">
                 <tr>
                     <th>No Daftar</th>
@@ -57,7 +57,7 @@
                         <td><?= $row['Tgl_Lahir']; ?></td>    
                         <td><?= $row['Jen_Kel']; ?></td>    
                         <td><?= $row['Agama']; ?></td>    
-                        <td><a href="<?= base_url();?>daftar/edit?id=<?php echo $row['No_Daftar']; ?>" class="btn btn-warning">Edit</a> | <a href="<?php echo base_url();?>daftar/delete?id=<?php echo $row['No_Daftar']; ?>" class="btn btn-danger">Delete</a> | <a href="<?php echo base_url();?>siswa/add?id=<?php echo $row['No_Daftar']; ?>" class="btn btn-primary">Acc</a></td>    
+                        <td><a href="<?= base_url();?>daftar/edit?id=<?php echo $row['No_Daftar']; ?>" class="btn btn-warning">Edit</a> | <a href="<?php echo base_url();?>daftar/delete?id=<?php echo $row['No_Daftar']; ?>" class="btn btn-danger">Delete</a> | <a href="<?php echo base_url();?>siswa/add?id=<?php echo $row['No_Daftar']; ?>" class="btn btn-primary">Acc</a> | <a href="<?php echo base_url();?>kwitansi/print_daftar?id=<?php echo $row['No_Daftar']; ?>" class="btn btn-success">Print</a> </td>    
                     </tr>
                     <?php } ?>
                 </tbody>

@@ -42,7 +42,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa-square"></i></span>
                                 </div>
-                                <input type="text" class="form-control" name="nama" id="nama">
+                                <input type="text" class="form-control" name="nama" id="nama" autocomplete="off">
                             </div>
                             <!-- /.input group -->
                             <?= form_error('nama','<small class="text-danger pl-3">','</small>'); ?>
@@ -57,7 +57,7 @@
                             <div class="input-group-prepend">
                               <span class="input-group-text"><i class="fas fa-map-marker-alt mr-1"></i></span>
                             </div>
-                            <input type="text" class="form-control" name="alamat">
+                            <input type="text" class="form-control" name="alamat" autocomplete="off">
                           </div>
                       <!-- /.input group -->
                       <?= form_error('alamat','<small class="text-danger pl-3">','</small>'); ?>
@@ -73,7 +73,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa fa-phone"></i></span>
                                 </div>
-                                <input type="number" class="form-control" name="no_hp" id="no_hp">
+                                <input type="number" class="form-control" name="no_hp" id="no_hp" autocomplete="off">
                             </div>
                             <!-- /.input group -->
                             <?= form_error('no_hp','<small class="text-danger pl-3">','</small>'); ?>
@@ -81,16 +81,16 @@
                     </div>
                     <div class="col-md-12">
                         <div class="form-group">
-                            <label>Status</label>
+                            <label>jabatan</label>
 
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa-envelope"></i></span>
                                 </div>
-                                <input type="text" class="form-control" name="status" id="status">
+                                <input type="text" class="form-control" name="jabatan" id="jabatan" autocomplete="off">
                             </div>
                             <!-- /.input group -->
-                            <?= form_error('status','<small class="text-danger pl-3">','</small>'); ?>
+                            <?= form_error('jabatan','<small class="text-danger pl-3">','</small>'); ?>
                         </div>
                     </div>
                     <div class="col-md-12">
@@ -101,7 +101,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa-user"></i></span>
                                 </div>
-                                <input type="text" class="form-control" name="username" id="username">
+                                <input type="text" class="form-control" name="username" id="username" autocomplete="off">
                             </div>
                             <!-- /.input group -->
                             <?= form_error('username','<small class="text-danger pl-3">','</small>'); ?>
@@ -115,7 +115,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa-lock"></i></span>
                                 </div>
-                                <input type="password" class="form-control" name="password" id="password">
+                                <input type="password" class="form-control" name="password" id="password" autocomplete="off">
                             </div>
                             <!-- /.input group -->
                             <?= form_error('password','<small class="text-danger pl-3">','</small>'); ?>

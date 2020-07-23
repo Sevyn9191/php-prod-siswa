@@ -50,7 +50,7 @@
                         <td><?= $row['Nama']; ?></td>    
                         <td><?= $row['Alamat']; ?></td>    
                         <td><?= $row['No_HP']; ?></td>    
-                        <td><a href="<?= base_url();?>admin/edit?id=<?php echo $row['Kd_Karyawan']; ?>" class="btn btn-warning">Edit</a> | <a href="<?php echo base_url();?>admin/delete?id=<?php echo $row['Kd_Karyawan']; ?>" class="btn btn-danger">Delete</a></td>    
+                        <td><a href="<?= base_url();?>admin/edit?id=<?php echo $row['Kd_Karyawan']; ?>" class="btn btn-warning">Edit</a> | <a href="<?php echo base_url();?>admin/delete?id=<?php echo $row['NIK']; ?>" class="btn btn-danger">Delete</a></td>    
                     </tr>
                     <?php } ?>
                 </tbody>

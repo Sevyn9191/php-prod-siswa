@@ -7,6 +7,8 @@
         <div class="row mb-2">
           <div class="col-sm-6">
             <a href="<?php echo base_url();?>biaya/tambah" class="btn btn-primary">TAMBAH DATA</a>
+            &nbsp;&nbsp;
+            <a href="<?php echo base_url();?>biaya/export_xls" class="btn btn-danger">DOWNLOAD LAPORAN</a>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -47,7 +49,7 @@
                     <tr>
                         <td><?= $row['Kd_Biaya']; ?></td>    
                         <td><?= $row['Nm_Biaya']; ?></td>    
-                        <td><?= $row['Besar_Biaya']; ?></td>    
+                        <td><?= number_format($row['Besar_Biaya'],2,',','.'); ?></td>    
                         <td><?= $row['Nama']; ?></td>    
                         <td><a href="<?= base_url();?>biaya/edit?id=<?php echo $row['Kd_Biaya']; ?>" class="btn btn-warning">Edit</a> | <a href="<?php echo base_url();?>biaya/delete?id=<?php echo $row['Kd_Biaya']; ?>" class="btn btn-danger">Delete</a></td>    
                     </tr>
